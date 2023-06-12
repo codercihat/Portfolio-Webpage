@@ -18,9 +18,9 @@ function App() {
 
       <Routes>
         <Route path="/" Component={MainPage} />
-        <Route path="/about" element={<About />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/contact" element={<About />} />
+        <Route path="/about" Component={About} />
+        <Route path="/projects" Component={Projects} />
+        
       </Routes>
 
       <section className="socials">
