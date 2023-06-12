@@ -17,9 +17,9 @@ function App() {
       </ul>
 
       <Routes>
-        <Route path="/" Component={MainPage} />
-        <Route path="/about" Component={About} />
-        <Route path="/projects" Component={Projects} />
+        <Route path="/" element={<MainPage />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/projects" element={<Projects />} />
         
       </Routes>
 
