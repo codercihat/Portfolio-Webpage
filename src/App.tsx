@@ -1,5 +1,5 @@
 
-import { BsGithub, BsLinkedin, BsTwitter } from "react-icons/bs";
+/* import { BsGithub, BsLinkedin, BsTwitter } from "react-icons/bs";
 import { Routes, Route, Link } from "react-router-dom";
 import MainPage from "./MainPage.tsx";
 import About from "./About.tsx";
@@ -41,4 +41,4 @@ function App() {
   );
 }
 
-export default App;
+export default App; */
