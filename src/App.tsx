@@ -1,6 +1,6 @@
 
 import { BsGithub, BsLinkedin, BsTwitter } from "react-icons/bs";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Link } from "react-router-dom";
 import MainPage from "./MainPage.tsx";
 import About from "./About.tsx";
 import Projects from "./Project.tsx";
@@ -8,12 +8,12 @@ function App() {
   return (
     <>
       <ul>
-        <a href="./about">
+        <Link to="/about">
           <li>About</li>{" "}
-        </a>
-        <a href="./projects">
+        </Link>
+        <Link to="./projects">
           <li>Projects</li>
-        </a>
+        </Link>
       </ul>
 
       <Routes>
