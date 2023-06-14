@@ -9,7 +9,7 @@ export default function MainPage() {
         <Link to="/about">
           <li>About</li>{" "}
         </Link>
-        <Link to="./projects">
+        <Link to="/projects">
           <li>Projects</li>
         </Link>
       </ul>
