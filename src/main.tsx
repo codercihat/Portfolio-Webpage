@@ -11,21 +11,34 @@ import './index.css'
 import MainPage from './MainPage';
 import About from './About';
 import Projects from './Project';
+import NewEl from './newEl';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <MainPage />,
-  /*   errorElement: <ErrorPage />, */
+    children: [ 
+      {path:"/",
+        element: <NewEl />},
+      {
+      path: "/about",
+      element: <About />,
+    }, 
+    {
+      path: "/projects",
+      element: <Projects />, 
+    }]  
+  
+ 
   },
-  {
+   /* {
     path: "/about",
     element: <About />,
   }, 
   {
     path: "/projects",
-    element: <Projects />,
-  }
+    element: <Projects />, 
+  } */
 ]);
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(

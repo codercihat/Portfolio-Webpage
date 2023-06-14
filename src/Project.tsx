@@ -3,14 +3,14 @@ import { Link } from "react-router-dom";
 
 export default function Projects(){
     return( <>
-    <ul>
+    {/* <ul>
         <Link to="/about">
           <li>About</li>{" "}
         </Link>
         <Link to="./projects">
           <li>Projects</li>
         </Link>
-      </ul>
+      </ul> */}
         <section className="main-content">
         {/* <div className="photo"></div> */}
         <div className="flex-text">

@@ -1,6 +1,6 @@
 import { BsGithub, BsLinkedin, BsTwitter } from "react-icons/bs";
 import { Link } from "react-router-dom";
-
+import { Outlet } from "react-router-dom";
 
 export default function MainPage() {
   return (
@@ -13,19 +13,7 @@ export default function MainPage() {
           <li>Projects</li>
         </Link>
       </ul>
-      <section className="main-content">
-        {/* <div className="photo"></div> */}
-        <div className="flex-text">
-          {/* <h1>Hello I am Cihat,from Turkey ney ney</h1>  */}
-  
-          <h1 className="animated-welcome">Hello Welcome to my page</h1>
-          
-          <h1 className="animated-welcome">You can learn more about me</h1>
-          
         
-         
-        </div>
-      </section>
       
 
       <section className="socials">
@@ -42,6 +30,8 @@ export default function MainPage() {
           <BsTwitter />
         </li></a>
       </section>
+      <Outlet />
     </>
+    
   );
 }
